@@ -1,0 +1,37 @@
+decide = 0
+redstoneState = 0
+while true
+do 
+print("Raise/Lower Farm Platform 1")
+print("Enter\n1 : raise(normal/default)\n0 : lower(maintenance)")
+repeat
+	decide = io.read()
+	decide = tonumber(decide)
+until decide == 1 or decide == 0
+
+if decide == 1
+then
+print("Platform:Raise(normal)")
+redstoneState = 0
+end
+
+if decide == 0
+then print("Platform:Lower(maintenance)")
+print("Please wait 15 sec to confirm decision...")
+print("If you wish to abort hold ctrl + t")
+print("If ctrl + t is held program will have to be restarted")
+for i = 1,15 do 
+print(15-i)
+sleep(1)
+end
+redstoneState = 1
+end
+
+if redstoneState == 1 then
+redstone.setOutput("back",true)
+end
+if redstoneState == 0 then
+redstone.setOutput("back",false)
+end
+end
+

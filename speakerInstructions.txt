@@ -1,0 +1,6 @@
+to play music in a speaker in cc tweaked, use speakerPlay.lua
+**eventually make it so that any file can be selected
+
+download the music as a dfpwm file with wget
+link to secret tunnel song in dfpwm form in my google docs
+https://docs.google.com/uc?export=download&id=1c6PBrvelhU6gBS99TiUYiKcTo24qGuNk
